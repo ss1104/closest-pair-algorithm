@@ -1,4 +1,3 @@
-# closest-pair-algorithm
 # Input description
 1. First line contains an integer 't' denotes the number of test cases.
 2. First line of next 't' lines contains an integer 'n' denotes the number of points in plane.
@@ -28,7 +27,7 @@
 11. We will create the vector of pair say 'border' and store the corresponding point in this vector in the sorted order with respect to 'Y' coordinates of all         such points lies in that plane.
 12. Now we'll calculate the smallest distance of 2 points among points in the 'border' vector. It can be proved that for each points in 'border' vector maximum        number of comparisons is 7.
 
-Proof for above : Lets create the rectangle of size 'mindist x 2mindist' ,the maximum vertical distance from given point is 'mindist' and the region have the                           horizontal distance of 2*mindist, that's why we are selecting rectangle of dimension 'mindist x 2mindist'. Now lets divide the rectange in                         eight equal parts. This means each equal part will be a square of dimension 'mindist/2 x mindist/2',let's say more than 2 points lie on                           square,so the maximum distance between 2 points will be mindist/sqrt(2) (when both points lies at the ends of the diagonal). But minimum                          distance of 2 points over all points in left and right half is 'mindist' else minimum distance would have been <= mindist/sqrt(2). This                            implies in one square atmost one point will lie ,thus for each point we have compare with at most 7 points if each square contain 1 point.
+Proof for above : Lets create the rectangle of size 'mindist x 2mindist' ,the maximum vertical distance from given point is 'mindist' and the region have the                           horizontal distance of 2*mindist, that's why we are selecting rectangle of dimension 'mindist x 2mindist'. Now lets divide the rectange in                         eight equal parts. This means each equal part will be a square of dimension 'mindist/2 x mindist/2',let's say more than 2 points lie on                           square,so the maximum distance between 2 points will be mindist/sqrt(2) (when both points lies at the ends of the diagonal). But minimum                          distance of 2 points over all points in left and right half is 'mindist' else minimum distance would have been <= mindist/sqrt(2). This                            implies in one square atmost one point will lie ,thus for each point we have to compare with at most 7 points if each square contain 1 point.
                     
                     
 13. Lets call variable 'd' as shortest distance between 2 points in given points in that region ,then at the end of the each recursion we have to  
