@@ -30,6 +30,8 @@
 
 Proof for above : Lets create the rectangle of size 'mindist*2*mindist' ,the maximum vertical distance from given point is 'mindist' and the region have the                           horizontal distance of 2*mindist, that's why we are selecting rectangle of dimension 'mindist*2*mindist'. Now lets divide the rectange in                         eight equal parts. This means each equal part will be a square of dimension 'mindist/2*mindist/2',let's say more than 2 points lie on square,
                     so the maximum distance between 2 points will be mindist/sqrt(2) (when both points lies at the ends of the diagonal). But minimum distance of                     2 points over all points in left and right half is 'mindist' else minimum distance would have been <= mindist/sqrt(2). This implies in one                         square atmost one point will lie ,thus for each point we have compare with at most 7 points if each square contain 1 point.
+                    
+                    
 13. Lets call variable 'd' as shortest distance between 2 points in given points in that region ,then at the end of the each recursion we have to  
     return min(d,mindist),final answer will be overall minimum of min(d,mindist) over all recursion.
   
