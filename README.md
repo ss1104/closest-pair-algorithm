@@ -2,8 +2,8 @@
 # Input description
 1. First line contains an integer 't' denotes the number of test cases.
 2. First line of next 't' lines contains an integer 'n' denotes the number of points in plane.
-3. Next line contains contains 'n' space seperated integers denotes the 'X' coordinates in 2D plane. (Random generated number of 'X' coordinate)
-4. Again next line contains 'n' space seperated integers denotes the 'Y' coordinates of corresponding 'X' cooedinates.(Random generated number of 'Y' coordinate)
+3. Next line contains contains 'n' space seperated integers denotes the 'X' coordinates in 2D plane. (Random generated number of 'X' coordinate.Dont take input of    those elements,'rand()' function will automatically generates the random number).
+4. Again next line contains 'n' space seperated integers denotes the 'Y' coordinates of corresponding 'X' cooedinates.(Random generated number of 'Y'                coordinate.Dont take input of those elements,'rand()' function will automatically generates the random number).
 
 # Output description
 . A decimal number represents the answer of the problem statement
